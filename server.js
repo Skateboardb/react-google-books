@@ -23,7 +23,10 @@ mongoose
 	.catch(err => {
 		console.log(`Error connecting to mongoDB: ${err}`);
 	});
+
 // Define API routes here
+
+require('./controller/books-controller')(app);
 
 // Send every other request to the React app
 // Define any API routes before this runs
