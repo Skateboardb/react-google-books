@@ -28,4 +28,15 @@ module.exports = function(router) {
 				res.json({ error: error });
 			});
 	});
+
+	router.post('/api/books', (req, res) => {
+		db.books
+			.create(req.body)
+			.then(response => {
+				res.json({ successful: response });
+			})
+			.catch(err => {
+				res.json({ error: err });
+			});
+	});
 };
