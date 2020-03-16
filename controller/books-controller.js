@@ -39,4 +39,15 @@ module.exports = function(router) {
 				res.json({ error: err });
 			});
 	});
+
+	router.delete('/api/books/:id', (req, res) => {
+		db.books
+			.findByIdAndDelete(req.params.id)
+			.then(response => {
+				res.json({ successful: response });
+			})
+			.catch(err => {
+				res.json({ error: err });
+			});
+	});
 };
