@@ -14,4 +14,18 @@ module.exports = function(router) {
 				res.json({ error: err });
 			});
 	});
+
+	router.post('/', (req, res) => {
+		let query = req.body.title.replace(/\s/g, '+');
+		axios
+			.get(
+				`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=${process.env.GBOOKS_APIKEY}`
+			)
+			.then(response => {
+				res.json(response.data.items);
+			})
+			.catch(err => {
+				res.json({ error: error });
+			});
+	});
 };
