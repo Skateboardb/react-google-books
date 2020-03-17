@@ -15,11 +15,11 @@ module.exports = function(router) {
 			});
 	});
 
-	router.post('/', (req, res) => {
+	router.post('/search', (req, res) => {
 		let query = req.body.title.replace(/\s/g, '+');
 		axios
 			.get(
-				`https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=${process.env.GBOOKS_APIKEY}`
+				`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${process.env.GBOOKS_APIKEY}`
 			)
 			.then(response => {
 				res.json(response.data.items);
