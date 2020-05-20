@@ -13,12 +13,12 @@ function Navs() {
 		// 	<Link to="/saved">Saved</Link>
 		// </Navbar>
 
-		<Navbar bg="light" expand="lg">
+		<Navbar  expand="lg" id="navbar">
 			<Navbar.Brand href="/" id="brand">Branford's Books</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
-					<Nav.Link href="/">Search</Nav.Link>
+					<Nav.Link href="/" >Search</Nav.Link>
 					<Nav.Link href="/saved">Saved</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
