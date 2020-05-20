@@ -14,8 +14,8 @@ function Header() {
 	return (
 		<header>
 			<div className="text-box">
-				<h1> Google Books Search - React Style</h1>
-				<p>Search for and Save Your Favorite Books!</p>
+				<h1 id="header"> Google Books Search - React Style</h1>
+				<p id="subheader">Search For and Save Your Favorite Books!</p>
 			</div>
 		</header>
 	);

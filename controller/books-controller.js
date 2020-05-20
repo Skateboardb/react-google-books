@@ -22,6 +22,8 @@ module.exports = function(router) {
 				`https://www.googleapis.com/books/v1/volumes?q=${query}&key=${process.env.GBOOKS_APIKEY}`
 			)
 			.then(response => {
+				console.log(response.data.items);
+				
 				res.json(response.data.items);
 			})
 			.catch(err => {

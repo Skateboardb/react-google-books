@@ -2,6 +2,8 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import './style.css';
+
 
 function Navs() {
 	return (
@@ -12,7 +14,7 @@ function Navs() {
 		// </Navbar>
 
 		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="/">Branford's Books</Navbar.Brand>
+			<Navbar.Brand href="/" id="brand">Branford's Books</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">

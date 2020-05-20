@@ -1,5 +1,7 @@
 import React from 'react';
-import Results from '../components/Results';
+import Results from '../Results';
+import './style.css';
+
 
 function ResultsContainer(props) {
 	if (props.path === '/') {
@@ -11,12 +13,13 @@ function ResultsContainer(props) {
 					return (
 						<Results
 							title={bookInfo.title}
+							subtitle={bookInfo.subtitle}
 							authors={bookInfo.authors}
 							description={bookInfo.description}
 							link={bookInfo.canonicalVolumeLink}
 							img={bookInfo.imageLinks}
 							path={props.path}
-							key={book.id}
+							key={book.id} 
 						/>
 					);
 				})}
@@ -31,6 +34,7 @@ function ResultsContainer(props) {
 						return (
 							<Results
 								title={book.title}
+								subtitle={book.subtitle}
 								authors={book.authors}
 								description={book.description}
 								link={book.link}

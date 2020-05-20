@@ -1,6 +1,8 @@
 import React from 'react';
-import API from '../utils/API';
+import API from '../../utils/API';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './style.css';
+
 
 class BookResult extends React.Component {
 	constructor(props) {
@@ -48,13 +50,13 @@ class BookResult extends React.Component {
 	render() {
 		return (
 			<div
-				className="bookResult"
+				className="bookResultRow row"
 				id={this.props.id ? this.props.id : null}
 				style={{ display: this.state.deleted ? 'none' : 'block' }}
 			>
-				<div className="row">
+				<div className="row aboutBookRow">
 					<div className="aboutBook">
-						<h4>{this.props.title}</h4>
+						<h4>{this.props.subtitle ? this.props.title + ": " + this.props.subtitle : this.props.title} </h4>
 						<p>
 							By: {this.props.authors ? this.props.authors.join(', ') : 'N/A'}
 						</p>
@@ -94,7 +96,7 @@ class BookResult extends React.Component {
 						)}
 					</div>
 				</div>
-				<div className="row">
+				<div className="">
 					{this.props.img ? (
 						<img
 							src={
@@ -108,7 +110,7 @@ class BookResult extends React.Component {
 							alt="book cover"
 						/>
 					) : null}
-					<p>{this.props.description ? this.props.description : 'N/A'}</p>
+					<p>{this.props.description ? this.props.description : 'No Description Available'}</p>
 				</div>
 			</div>
 		);
