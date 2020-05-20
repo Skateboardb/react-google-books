@@ -1,2 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+TC&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@600;700&family=Noto+Serif+TC&display=swap'); */
+
+main{
+    padding: 0 50px 0 50px;
+}

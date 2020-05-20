@@ -5,6 +5,9 @@ header {
 	background-size: cover;
 	position: relative;
 	top: 62px;
+	border-bottom: 5px solid #723900;
+	margin-bottom: 20px;
+
 }
 
 .text-box {
@@ -13,8 +16,6 @@ header {
 	top: 40px;
 	margin: 0 650px 0 0px;
 	padding: 5px 0 8px 40px;
-
-
 
 }
 
