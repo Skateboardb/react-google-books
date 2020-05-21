@@ -7,6 +7,7 @@
 #searchButton{
     font-weight: 600 !important;
     border: 2px solid #007bff !important;
+    z-index: 0;
 }
 
 .searchBar input{

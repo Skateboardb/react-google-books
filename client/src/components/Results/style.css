@@ -1,7 +1,16 @@
-.bookResultRow, .aboutBookRow {
+.bookResultRow, .aboutBook {
     margin: 0px !important;
 }
 
 img{
     border: 1px solid black !important;
+    padding: 0 !important;
+    max-width: 215px !important;
+    max-height: auto;
+}
+
+.btnDiv{
+    position: absolute; 
+    bottom: 40px;
+    z-index: 1;
 }
