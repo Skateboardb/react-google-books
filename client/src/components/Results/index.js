@@ -131,7 +131,7 @@ class BookResult extends React.Component {
 							</div>
 							
 							<div className="row">
-								<p className="col">{this.props.description ? this.props.description : 'No Description Available'}</p>
+								<p className="col description">{this.props.description ? this.props.description : 'No Description Available'}</p>
 							</div>		
 						</div>
 				</div>

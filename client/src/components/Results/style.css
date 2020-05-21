@@ -1,5 +1,5 @@
 .bookResultRow, .aboutBook {
-    margin: 0px !important;
+    margin: 20px 0  !important;
 }
 
 img{
@@ -13,4 +13,8 @@ img{
     position: absolute; 
     bottom: 40px;
     z-index: 1;
+}
+
+.description{
+    float: left;
 }
