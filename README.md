@@ -1,10 +1,21 @@
-# Create React Express App
+# BRANFORD'S BOOKS
 
-## About This Boilerplate
+This application allows users to search Google Books for popular (and unpopular) titles with ease. Results are shown on a single page, providing the options to view the Google Books page or to save the title to a public collection. 
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+
+## Technology
+* Node.JS
+* Express.JS
+* React.JS
+* MongoDB
+* Mongoose
+* Axios
+* CD with Heroku
+
+![Main page after searching](/client/src/img/screenshot.png)
+
+Check it out [here!](https://branfords-books.herokuapp.com/)
 
 ## Starting the app locally
 
