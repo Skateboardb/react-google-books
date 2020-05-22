@@ -69,7 +69,7 @@ class BookResult extends React.Component {
 				
 				<div className="row">
 
-					<div className="col" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+					<div id="leftCol" className="col-lg-3 col-md-5 " onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
 						{this.props.img ? (
 							<img
 								src={
@@ -84,7 +84,7 @@ class BookResult extends React.Component {
 								// className="col"
 							/>
 						) : null}
-						{this.state.isMouseInside ? <div className="btnDiv">
+					 <div className="btnDiv">
 								{// if link to book exists include View button else do not
 								this.props.link ? (
 									<a
@@ -117,24 +117,25 @@ class BookResult extends React.Component {
 										Delete
 									</button>
 								)}
-							</div> : null}
+							</div> 
 
 					</div> 
 
-						<div className="col-10 aboutBook">
+						<div className="col-9 aboutBook">
 							<div className="aboutBookRow row">
 								<h4 className="col-12">{this.props.subtitle ? this.props.title + ": " + this.props.subtitle : this.props.title} </h4>
 
 								<p className="col-12">
 									By: {this.props.authors ? this.props.authors.join(', ') : 'N/A'}
 								</p>
+								<p className="col description">{this.props.description ? this.props.description : 'No Description Available'}</p>
 							</div>
 							
-							<div className="row">
-								<p className="col description">{this.props.description ? this.props.description : 'No Description Available'}</p>
-							</div>		
+							{/* <div className="row">
+							</div>		 */}
 						</div>
 				</div>
+				<hr></hr>
 			</div>
 		);
 	}

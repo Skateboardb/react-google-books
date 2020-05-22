@@ -1,20 +1,24 @@
-.bookResultRow, .aboutBook {
-    margin: 20px 0  !important;
+.bookResultRow {
+    margin: 20px 0 40px 0  !important;
+}
+
+#leftCol{
+    text-align: center;
 }
 
 img{
     border: 1px solid black !important;
     padding: 0 !important;
     max-width: 215px !important;
+    min-width: 150px;
     max-height: auto;
+    width: 100%;
+    /* margin: auto; */
 }
 
-.btnDiv{
-    position: absolute; 
-    bottom: 40px;
-    z-index: 1;
+.btnDiv button{
+width: 100%;
+max-width: 215px;
+margin: 15px auto 0 auto;
 }
 
-.description{
-    float: left;
-}
