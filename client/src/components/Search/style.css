@@ -12,4 +12,5 @@
 
 .searchBar input{
     height: 3rem;
+    z-index: inherit;
 }
