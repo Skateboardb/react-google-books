@@ -1,6 +1,6 @@
 # BRANFORD'S BOOKS
 
-This application allows users to search Google Books for popular (and unpopular) titles with ease. Results are shown on a single page, providing the options to view the Google Books page or to save the title to a public collection. 
+This application allows users to search Google Books for popular (or unpopular) titles with ease. Results are shown on a single page, providing the options to view the Google Books page or to save the title to a public collection. 
 
 
 
@@ -35,6 +35,3 @@ npm start
 
 Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
